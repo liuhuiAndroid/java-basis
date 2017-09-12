@@ -12,13 +12,13 @@ public class Example6 {
         System.out.println("打印int1的值：" + int1);
         System.out.println("打印int2的值：" + int2);
 
-        int[] intArr1 = new int[]{1, 2, 3,4,5};
+        int[] intArr1 = new int[]{1, 2, 3, 4, 5};
         int[] intArr2 = intArr1;
         intArr1[3] = 8;
         System.out.println("打印intArr1[3]的值：" + intArr1[3]);
         System.out.println("打印intArr2[3]的值：" + intArr2[3]);
 
-        Person person1 = new Person("张三",21);
+        Person person1 = new Person("张三", 21);
         Person person2 = person1;
         person1.setName("李四");
         person1.setAge(35);

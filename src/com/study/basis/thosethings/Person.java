@@ -29,4 +29,20 @@ public class Person {
         this.age = age;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(this == obj){
+            return true;
+        }
+        if(obj instanceof Person){
+            Person objPerson = (Person) obj;
+            return this.name.equals(objPerson.getName());
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return this.name.hashCode();
+    }
 }
